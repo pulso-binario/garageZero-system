@@ -35,3 +35,6 @@ build/
 ### MVN ###
 .mvn/maven.config
 .mvn/settings.xml
+
+### SPRING ###
+src/main/resources/application-local.properties

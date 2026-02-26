@@ -37,9 +37,9 @@
         <profile>
             <id>sonar</id>
             <properties>
-                <sonar.projectKey>pulso-binario_garageZero-system</sonar.projectKey>
-                <sonar.organization>binarypulse</sonar.organization>
-                <sonar.token>22252ec7f06841b0edee44b7743c8fc18a179c8f</sonar.token>
+                <sonar.projectKey>FILL_IN</sonar.projectKey>
+                <sonar.organization>FILL_IN</sonar.organization>
+                <sonar.token>FILL_IN</sonar.token>
             </properties>
         </profile>
     </profiles>

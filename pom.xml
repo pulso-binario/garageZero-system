@@ -12,7 +12,7 @@
 	<artifactId>zeroGarage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>zeroGarage</name>
-	<description>Demo projec for ZeroGarage</description>
+	<description>Demo project for ZeroGarage</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -28,6 +28,11 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<sonar.projectKey>${sonar.projectKey}</sonar.projectKey>
+		<sonar.organization>${sonar.organization}</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -84,6 +89,11 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>4.0.0.4121</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
