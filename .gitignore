@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### MVN ###
+.mvn/maven.config
+.mvn/settings.xml
