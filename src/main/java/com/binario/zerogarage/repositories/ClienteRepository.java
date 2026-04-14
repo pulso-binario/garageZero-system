@@ -1,6 +1,6 @@
-package com.binario.zeroGarage.repositories;
+package com.binario.zerogarage.repositories;
 
-import com.binario.zeroGarage.models.entities.Cliente;
+import com.binario.zerogarage.models.entities.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
