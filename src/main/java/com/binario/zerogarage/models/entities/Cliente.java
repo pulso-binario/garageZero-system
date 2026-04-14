@@ -1,4 +1,4 @@
-package com.binario.zeroGarage.models.entities;
+package com.binario.zerogarage.models.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
