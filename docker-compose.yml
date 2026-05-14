@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:18-alpine # Using Alpine for a lightweight container, matching GCP version 15
+    container_name: garagezero-local-db
+    restart: always
+    environment:
+      POSTGRES_DB: garagezero_db
+      POSTGRES_USER: spring_backend_user
+      POSTGRES_PASSWORD: local_dev_password # Use this simple password for local dev only
+    ports:
+      - "5432:5432" # Maps your laptop's port 5432 to the container's port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql # Persists your data even if you kill the container
+
+volumes:
+  postgres_data:

@@ -1,0 +1,22 @@
+spring:
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration # Good safety practice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/garagezero_db
+    username: spring_backend_user
+    password: local_dev_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      # We must use 'update' temporarily to build the fresh tables,
+      # OR we switch this to 'validate' and use Flyway.
+      ddl-auto: validate
+logging:
+  level:
+    org.flywaydb: DEBUG # Force Flyway to print everything it's doing

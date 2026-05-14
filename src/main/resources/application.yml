@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: zeroGarage
+  profiles:
+    active: local # This tells Spring to look for the application-local.yml file

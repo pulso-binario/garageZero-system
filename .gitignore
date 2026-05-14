@@ -36,5 +36,8 @@ build/
 .mvn/maven.config
 .mvn/settings.xml
 
+### Docker ###
+docker-compose.yml
+
 ### SPRING ###
-src/main/resources/application-local.properties
+src/main/resources/application-local.yml
