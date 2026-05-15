@@ -1,4 +1,4 @@
-package com.binario.zerogarage.models.entities;
+package com.binario.zerogarage.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -43,6 +43,8 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
+
+    @Builder.Default
     private Set<Role> roles = new HashSet<>();
 
     @PrePersist

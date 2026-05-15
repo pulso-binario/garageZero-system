@@ -1,4 +1,4 @@
-package com.binario.zerogarage.models.entities;
+package com.binario.zerogarage.entity;
 
 
 import jakarta.persistence.*;
